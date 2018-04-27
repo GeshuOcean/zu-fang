@@ -56,7 +56,7 @@ public class User implements UserDetails {
         this.name = name;
     }
 
-    @Transient
+    @Transient //不与数据库验证
     private List<GrantedAuthority> authorityList;
 
     public List<GrantedAuthority> getAuthorityList() {
